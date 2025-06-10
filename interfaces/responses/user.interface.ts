@@ -1,0 +1,31 @@
+export interface IUserResponse {
+	sub?: string;
+	iss?: string;
+	exp?: number;
+	iat?: number;
+	aud?: string;
+	name: string;
+	department: string;
+	mail: string;
+	job_title: string;
+	mobile_phone: string;
+	region: string;
+	firstname: string;
+	surname: string;
+	staff_id: string;
+	s_no: number;
+	employee_no: string;
+	employee_name: string;
+	job_role: string;
+	feeder_name: string | null;
+	location: string;
+	service_centre: string | null;
+	feeder_manager: string | null;
+	office_manager: string | null;
+	zone: string;
+	email_address: string;
+	phone_number: string;
+	employee_type: string;
+	unit: string;
+	profile: string;
+}
