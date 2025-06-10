@@ -14,6 +14,7 @@ export type SafeAreaWrapperProps = {
 export type CustomCheckboxProps = {
 	checked: boolean;
 	onChange: (newValue: boolean) => void;
+	onCheckedChange?: () => void;
 	label?: string;
 	labelClassName?: string;
 	className?: string;
