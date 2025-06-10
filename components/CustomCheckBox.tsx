@@ -6,6 +6,7 @@ import { Pressable, Text, View } from "react-native";
 const CustomCheckbox = ({
 	checked,
 	onChange,
+	onCheckedChange,
 	label,
 	labelClassName,
 	className,
@@ -15,7 +16,10 @@ const CustomCheckbox = ({
 }: CustomCheckboxProps) => {
 	return (
 		<Pressable
-			onPress={() => onChange(!checked)}
+			onPress={() => {
+				onChange(!checked);
+				if (onCheckedChange) onCheckedChange();
+			}}
 			className="flex-row items-center justify-center gap-3"
 		>
 			<View
